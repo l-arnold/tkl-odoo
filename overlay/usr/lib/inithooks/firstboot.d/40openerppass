@@ -3,5 +3,6 @@
 
 . /etc/default/inithooks
 
+OPENERP_PASS=$(mcookie)
 [ -e $INITHOOKS_CONF ] && . $INITHOOKS_CONF
 $INITHOOKS_PATH/bin/setpass.py openerp --pass="$OPENERP_PASS"
